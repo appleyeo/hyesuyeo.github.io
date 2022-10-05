@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+container {
+  display: flex;
+  justify-content: center; /*1st*/
+}
+
+.panel {
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 90vw;
+  position: relative;
+  border-radius: 20px;
+  background-repeat: no-repeat; /*이 부분 찾아보기 왜 하는지*/
+  color: #ffffff;
+  cursor: pointer; /*2nd*/
+  flex: 0.5; /*처음에 값을 0.5로 설정하고 액티브 클래스값이 있을 경우 이 flex 값을 5정도로 높게 바꿔줄 예정*/ /*3rd*/
+  margin: 10px;
+  transition: flex 0.7s ease-in; /*4th*/
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  margin: 0px;
+  opacity: 0; /*처음에 0으로 해놓고 나중에 액티브할 때 선명도 높일 예정*/
+}
+
+.panel.active {
+  flex: 5;
+  border-radius: 20px;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s; /*맨 마지막에 글씨가 카드 클릭 시 부자연스럽게 떨어지듯이 노출돼서 클릭 시 몇 초 후 자연스럽게 보일 수 있도록 조정함*/
+}
+
+@media (max-width: 600px) {
+  container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none; /*4번째, 5번째 카드가 가로너비가 480px 이하일 경우 아예 보이지 않게 하고 싶음*/
+  }
+}

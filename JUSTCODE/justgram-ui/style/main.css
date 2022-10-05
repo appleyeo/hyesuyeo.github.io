@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  background-color: yellow;
+  position: relative;
+  width: 100%;
+}
+
+#instaLogo {
+  width: 40px;
+  height: 40px;
+}
+
+.icons {
+  position: absolute;
+  right: 10%;
+  justify-content: space-between;
+}
+
+.icons img {
+  height: 30px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+header input {
+  margin: 0 auto;
+}

@@ -1,0 +1,75 @@
+.title {
+  background-color: black;
+  color: #ffffff;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.game-content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.game-score {
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.game-score img {
+  width: 30px;
+}
+
+.score-label {
+  margin: 0 auto;
+}
+
+.score-number {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+#bg {
+  background: url(images/bg.png) no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.hearts {
+  text-align: right; /*여기 왜 하트 우측정렬 적용되는지*/
+}
+
+.start-button {
+  width: 100%;
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px;
+}
+
+#hero {
+  width: 35px;
+  height: 54px;
+  background-image: url("images/hero.png");
+  background-repeat: no-repeat;
+  /*background가 0px, 0px로 되어 있는게 .stop, left, right 클래스에도 해당 값이 적용되어서 포지션이 적용되지 않았음 */
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+}
+
+.stop {
+  background-position: 0px 0px;
+}
+
+.right {
+  background-position: -105px 0px;
+}
+
+.left {
+  background-position: -70px 0px;
+}
