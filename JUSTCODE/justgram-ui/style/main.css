@@ -1,13 +1,35 @@
-header {
-  display: flex;
-  background-color: yellow;
-  position: relative;
-  width: 100%;
+* {
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
 }
 
-#instaLogo {
-  width: 40px;
-  height: 40px;
+/*HEADER*/
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 6vh;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.section1 {
+  position: absolute;
+  left: 30px;
+  display: flex;
+}
+
+.line {
+  margin: 0px 10px;
+}
+
+.section1 img {
+  width: 23px;
+  height: 23px;
+}
+
+.line,
+.logo {
+  font-size: 23px;
 }
 
 .icons {
@@ -24,4 +46,42 @@ header {
 
 header input {
   margin: 0 auto;
+}
+.feedBody {
+  height: 500px;
+  background-color: beige;
+}
+
+.section2 {
+  margin: 0 auto;
+}
+
+.section2 input {
+  text-align: center;
+  padding: 3px 10px;
+  border: 1px solid #bdbdbd;
+  color: #bdbdbd;
+}
+
+/*해야 할일 : header 요소들 모두 세로 기준 가운데 정렬 될 수 있도록 수정 필요*/
+
+/*BODY*/
+.feed {
+  width: 35%;
+  background-color: red;
+  margin: 55px auto 0 auto;
+  border: 1px solid #bdbdbd;
+  position: relative;
+}
+
+.feedBoxTop {
+  height: 8vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.feed img {
+  width: 100%;
+  height: 70%;
 }
