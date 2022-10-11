@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+}
+
+.logo {
+  width: 80%;
+  font-size: 40px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border: 1px solid #bdbdbd;
+  margin: 0 auto;
+}
+
+.login input,
+button {
+  margin: 5px auto;
+  padding: 12px;
+  width: 80%;
+  border-radius: 2px;
+}
+
+.login input {
+  background-color: #fafafa;
+  display: block;
+  justify-content: center;
+  border: 1px solid #bdbdbd;
+}
+
+button {
+  background-color: #0095f6;
+  font-size: 14px;
+  border: none;
+  color: white;
+  display: block;
+  opacity: 0.3;
+}
+
+.forgotPW {
+  color: #00376b;
+  position: absolute;
+  bottom: 10px;
+  left: 120px; /*이거를 px이 아니라 특정 %로 해야 하는데 */
+}
+
+.login {
+  margin: 50px 10px;
+}
+
+.changeOpacity {
+  opacity: 1;
+}

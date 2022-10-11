@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+}
+
+/*HEADER*/
+.feedHeader {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 6vh;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.section1 {
+  position: absolute;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  margin: 0px 10px;
+}
+
+.section1 img {
+  width: 23px;
+  height: 23px;
+}
+
+.line,
+.logo {
+  font-size: 23px;
+}
+
+#instaLogo {
+  margin-top: 5px;
+}
+
+.icons {
+  position: absolute;
+  right: 10%;
+  justify-content: space-between;
+}
+
+.icons img {
+  height: 30px;
+  margin-right: 20px;
+}
+
+header input {
+  margin: 0 auto;
+}
+
+.feedBody {
+  height: 500px;
+  background-color: beige;
+}
+
+.section2 {
+  margin: 0 auto;
+}
+
+.section2 input {
+  text-align: center;
+  padding: 3px 10px;
+  border: 1px solid #e4e4e4;
+  color: #e4e4e4;
+}
+
+/*해야 할일 : header 요소들 모두 세로 기준 가운데 정렬 될 수 있도록 수정 필요*/
+
+/*BODY*/
+.feed {
+  width: 35%;
+  height: 90vh;
+  /* background-color: red; */
+  margin: 50px auto 0 auto;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  border-radius: 5px;
+}
+
+.feedProfile {
+  height: 8vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.feedProfile img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 70%;
+}
+
+.imageArea {
+  height: 60vh;
+}
+
+.imageArea img {
+  width: 100%;
+  height: 100%;
+}
+
+.feedIcons {
+  display: flex;
+  position: relative;
+}
+
+.feedIcons img {
+  width: 25px;
+  height: 25px;
+  margin: 3px 5px 3px 3px;
+  justify-content: space-evenly;
+}
+
+.bookmark {
+  position: absolute;
+  right: 3px;
+  margin: 3px 0 0 0;
+}
+
+.heartsCount {
+  font-size: 12px;
+  margin: 8px 0 0 3px;
+}
+
+.writtenComments {
+  margin: 8px 0 0 3px;
+  font-size: 12px;
+}
+
+.newComments {
+  border-top: 1px solid #e4e4e4;
+  margin-top: 3px;
+  display: flex;
+  align-content: center;
+  height: 100%;
+  font-size: 14px;
+  margin: 2px 0 0 2px;
+}
+
+.newComments textarea {
+  width: 90%;
+  border: none;
+  resize: none;
+}
+
+.newComments button {
+  border: none;
+  color: #0095f6;
+  background-color: #ffffff;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+textarea {
+  overflow: hidden;
+}
+
+textarea:focus {
+  outline: none;
+}
